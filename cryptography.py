@@ -11,5 +11,5 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 """
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 associations=list(associations)
-print(associations.find("a"))
+print(associations.index("a"))
 print(list(associations))
