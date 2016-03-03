@@ -13,19 +13,20 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 associations=list(associations)
 
 
-def encrypt:
+def encrypt():
     
-def decrypt:
+def decrypt():
     
-def requesting_ans:
+def requesting_ans():
     req=input("Enter e to encrypt, d to decrypt, q to quit")
     if req=="e":
         mess=str("message to encrypt")
         encrypt(mess)
     elif req=="d":
         mess=str(input("message to decrypt"))
+        decrypt()
     elif req=="q":
         return("Goodbvye")
     else:
         print("Sorry did not understand")
-        requesting_ans
+        requesting_ans()
