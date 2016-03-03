@@ -1,7 +1,7 @@
 """
 cryptography.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Ethan Adner
+Credit: 
 
 Assignment:
 
@@ -11,5 +11,21 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 """
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 associations=list(associations)
-print(associations.index("a"))
-print(list(associations))
+
+
+def encrypt:
+    
+def decrypt:
+    
+def requesting_ans:
+    req=input("Enter e to encrypt, d to decrypt, q to quit")
+    if req=="e":
+        mess=str("message to encrypt")
+        encrypt(mess)
+    elif req=="d":
+        mess=str(input("message to decrypt"))
+    elif req=="q":
+        return("Goodbvye")
+    else:
+        print("Sorry did not understand")
+        requesting_ans
