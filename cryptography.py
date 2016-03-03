@@ -14,9 +14,23 @@ associations=list(associations)
 
 
 def encrypt(P):
-    print()
+    key=input("What is the encryption key?")
+    P=list(P)
+    z=0
+    p=[]
+    for x in P:
+        p.append(associations.index[x])
+    K=[]
+    for x in key:
+        K.append(associations.index[x])
+    c=[]
+    while z<len(p):
+        c.append((p[z]+K[z%len(K)]))
+        z=z+1
 def decrypt(C):
     print()
+    
+    
 def requesting_ans():
     req=input("Enter e to encrypt, d to decrypt, q to quit")
     if req=="e":
