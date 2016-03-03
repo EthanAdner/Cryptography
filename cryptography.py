@@ -13,9 +13,9 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 associations=list(associations)
 
 
-def encrypt():
+def encrypt(P):
     print()
-def decrypt():
+def decrypt(C):
     print()
 def requesting_ans():
     req=input("Enter e to encrypt, d to decrypt, q to quit")
