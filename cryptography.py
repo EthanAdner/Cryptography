@@ -14,9 +14,9 @@ associations=list(associations)
 
 
 def encrypt():
-    return()
+#
 def decrypt():
-    return()
+#
 def requesting_ans():
     req=input("Enter e to encrypt, d to decrypt, q to quit")
     if req=="e":
