@@ -54,7 +54,7 @@ def requesting_ans():
         mess=str(input("message to decrypt"))
         decrypt()
     elif req=="q":
-        return("Goodbye")
+        print(return("Goodbye"))
     else:
         print("Sorry did not understand")
         requesting_ans()
