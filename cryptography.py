@@ -29,6 +29,12 @@ def encrypt(P):
         c.append((p[z]+K[z%len(K)]))
         z=z+1
     print(c)
+    z=0
+    C=[]
+    while z<len(c):
+        C.append(associations[c[z]])
+        z=z+1
+    print(C)
 
 
 def decrypt(C):
