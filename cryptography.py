@@ -43,6 +43,11 @@ def encrypt(P):
 
 
 def decrypt(C):
+    key=str(input("What is your key"))
+    C=list(C)
+    c=[]
+    for x in C:
+        c.append()
     print()
     
     
@@ -53,7 +58,7 @@ def requesting_ans():
         encrypt(mess)
     elif req=="d":
         mess=str(input("message to decrypt"))
-        decrypt()
+        decrypt(mess)
     elif req=="q":
         print("Goodbye")
         return()
