@@ -47,8 +47,8 @@ def decrypt(C):
     C=list(C)
     c=[]
     for x in C:
-        c.append()
-    print()
+        c.append(associations.index(x))
+    print(c)
     
     
 def requesting_ans():
