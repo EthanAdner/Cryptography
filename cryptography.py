@@ -38,7 +38,7 @@ def encrypt(P):
     a=""
     for x in C:
         print(x,end="")
-        a=a+str(x)
+        a=a+x
     print(a)
 
 
