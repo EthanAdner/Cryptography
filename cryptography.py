@@ -35,8 +35,9 @@ def encrypt(P):
         C.append(associations[c[z]])
         z=z+1
     print(C)
-    for x in C:
-        print(x,"",end=" ")
+    print(str(C))
+    #for x in C:
+     #   print(x,"",end="")
 
 
 def decrypt(C):
