@@ -20,6 +20,7 @@ def encrypt(P):
     p=[]
     for x in P:
         p.append(associations.index[x])
+    print(p)
     K=[]
     for x in key:
         K.append(associations.index[x])
@@ -40,7 +41,7 @@ def requesting_ans():
         mess=str(input("message to decrypt"))
         decrypt()
     elif req=="q":
-        return("Goodbvye")
+        return("Goodbye")
     else:
         print("Sorry did not understand")
         requesting_ans()
