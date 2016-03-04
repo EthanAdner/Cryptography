@@ -28,6 +28,9 @@ def encrypt(P):
     while z<len(p):
         c.append((p[z]+K[z%len(K)]))
         z=z+1
+
+
+
 def decrypt(C):
     print()
     
