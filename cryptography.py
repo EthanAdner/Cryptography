@@ -14,7 +14,7 @@ associations=list(associations)
 
 
 def encrypt(P):
-    key=input("What is the encryption key?")
+    key=input("Key: ")
     P=list(P)
     z=0
     p=[]
@@ -43,7 +43,7 @@ def encrypt(P):
 
 
 def decrypt(C):
-    key=str(input("What is your key"))
+    key=str(input("Key: "))
     C=list(C)
     c=[]
     for x in C:
@@ -71,18 +71,18 @@ def decrypt(C):
     
     
 def requesting_ans():
-    req=input("Enter e to encrypt, d to decrypt, q to quit")
+    req=input("Enter e to encrypt, d to decrypt, or q to quit:")
     if req=="e":
-        mess=str(input("message to encrypt"))
+        mess=str(input("Message: "))
         encrypt(mess)
     elif req=="d":
-        mess=str(input("message to decrypt"))
+        mess=str(input("Message: "))
         decrypt(mess)
     elif req=="q":
-        print("Goodbye")
+        print("Goodbye!")
         return()
     else:
-        print("Sorry did not understand")
+        print("Did not understand command, try again.")
         requesting_ans()
         
 requesting_ans()
