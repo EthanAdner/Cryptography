@@ -63,7 +63,7 @@ def decrypt(C):
         P.append(associations[p[z]])
         z=z+1
     
-    print(p)
+    print(P)
     
     
 def requesting_ans():
