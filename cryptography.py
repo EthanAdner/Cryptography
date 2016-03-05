@@ -35,11 +35,11 @@ def encrypt(P):
         C.append(associations[c[z]])
         z=z+1
     #print(C)
-    a=""
+    s=""
     for x in C:
-        a=a+x
-    print(a)
-    return(a)
+        s=s+x
+    print(s)
+    return(s)
 
 
 def decrypt(C):
@@ -62,8 +62,12 @@ def decrypt(C):
     while z<len(p):
         P.append(associations[p[z]])
         z=z+1
+    s=""
+    for x in P:
+        s=s+x
+    print(s)
+    return(s)
     
-    print(P)
     
     
 def requesting_ans():
