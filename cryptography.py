@@ -48,28 +48,17 @@ def decrypt(C):
     c=[]
     for x in C:
         c.append(associations.index(x))
-    
     K=[]
     for x in key:
         K.append(associations.index(x))
-    c=[]
+    
     z=0
-    while z<len(p):
-        c.append((p[z]-K[z%len(K)])%len(associations))
-        z=z+1
-    #print(c)
-    z=0
-    C=[]
+    p=[]
     while z<len(c):
-        C.append(associations[c[z]])
+        p.append((c+K[z%len(K)])%len(associations))
         z=z+1
-    #print(C)
-    a=""
-    for x in C:
-        a=a+x
-    print(a)
-    return(a)
-    print(c)
+    
+    print(p)
     
     
 def requesting_ans():
