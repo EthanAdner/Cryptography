@@ -55,7 +55,7 @@ def decrypt(C):
     z=0
     p=[]
     while z<len(c):
-        p.append((c+K[z%len(K)])%len(associations))
+        p.append((c[z]+K[z%len(K)])%len(associations))
         z=z+1
     
     print(p)
