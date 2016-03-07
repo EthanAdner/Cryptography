@@ -71,7 +71,7 @@ def decrypt(C):
     
     
 def requesting_ans():
-    req=input("Enter e to encrypt, d to decrypt, or q to quit:")
+    req=input("Enter e to encrypt, d to decrypt, or q to quit: ")
     if req=="e":
         mess=str(input("Message: "))
         encrypt(mess)
