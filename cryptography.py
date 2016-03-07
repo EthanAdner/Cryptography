@@ -75,9 +75,11 @@ def requesting_ans():
     if req=="e":
         mess=str(input("Message: "))
         encrypt(mess)
+        requesting_ans()
     elif req=="d":
         mess=str(input("Message: "))
         decrypt(mess)
+        requesting_ans()
     elif req=="q":
         print("Goodbye!")
         return()
